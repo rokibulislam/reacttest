@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import TodoList from './components/Todos/TodoList'
+import ButtonList from './components/Button/ButtonList'
 import './App.css';
 
 const App = () => {
@@ -53,6 +54,7 @@ const App = () => {
 
   return (
     <div className="App">
+        <ButtonList/>
         <TodoList items={todos} onItemClick={handleClick} />
     </div>
   );
